@@ -1,10 +1,9 @@
-from cl.box import box
+from cl.cabinet import Cabinet
 
-b1 = box(80, 20, 20)
-b2 = box(20, 80, 20)
 
-obj = b1 + b2
-obj = obj.edges("Z").fillet(2)
+cabinet = Cabinet()
+
+obj = cabinet.get_obj()
 
 
 # Show
